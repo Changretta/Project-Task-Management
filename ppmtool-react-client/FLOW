@@ -1,0 +1,14 @@
+So basically redux flow for every action 
+
+create the action in the action file
+
+create the case in the reducer page
+defining the action and the payload
+
+use the axios library to create a functional component so it communicates with the server
+
+
+Glossary
+
+{connect} : connects the class to the redux store 
+PropTypes:
