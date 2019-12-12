@@ -5,6 +5,6 @@ import backlogReducer from './backlogReducer';
 
 export default combineReducers({
         errors:errorReducer,        
-        projects: projectReducer,
+        project: projectReducer,
         backlog:backlogReducer
 });

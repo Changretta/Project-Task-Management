@@ -8,15 +8,15 @@ import PropTypes from "prop-types";
 // import { projects } from '../index';
 
 class Dashboard extends Component {
-   
-    //triggered by the connect bottom aciton
-    componentDidMount() {
+
+    UNSAFE_componentDidMount() {
         this.props.getProjects();
     }
 
 
     render() {
-       const {projects} = this.props.project;
+
+        const {projects} = this.props.project;;
 
         return (
             <div className="projects">
@@ -47,12 +47,12 @@ class Dashboard extends Component {
 Dashboard.propTypes = {
     project: PropTypes.object.isRequired,
     getProjects: PropTypes.func.isRequired
-}
+};
 
 //get the project from index.js
 const mapStateToProps = state => ({
     project:state.project,
 
-})
+});
 
 export default connect(mapStateToProps, { getProjects })(Dashboard) ;

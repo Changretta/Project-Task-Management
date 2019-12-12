@@ -74,4 +74,4 @@ import ProjectTask from './ProjectTasks/ProjectTask';
         )
     }
 }
-export default Backlog
+export default Backlog;
